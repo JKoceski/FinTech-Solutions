@@ -23,5 +23,9 @@
 <p>You are logged in as <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Logout</a></p>
 
 <?php endif ?>
+<p>Play <a href="videoGameQuiz/Quiz.html">VideoGame</a> </p>
+<p>Play <a href="SportsQuiz/Quiz.html">SportsGame</a> </p>
+<p>Play <a href="MovieQuiz/Quiz.html">MovieGame</a> </p>
+<p>Play <a href="MusicQuiz/Quiz.html">MusicGame</a> </p>
 </body>
 </html>
