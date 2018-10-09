@@ -23,5 +23,7 @@
 <p>You are logged in as <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Logout</a></p>
 
 <?php endif ?>
+
+<p><a href="categorytesting.php">Home Page</a> </p>
 </body>
 </html>

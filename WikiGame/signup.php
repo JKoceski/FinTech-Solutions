@@ -38,7 +38,7 @@ if(isset($_POST['signupBtn'])) {
 
             //create SQL insert statement
             $sqlInsert = "INSERT INTO users (username, email, password, join_date)
-                  VALUES (:username, :email, :password, now())";
+                  VALUES (:username, :email, :password, now(), 0)";
 
             //use PDO prepared to sanitize data
             $statement = $db->prepare($sqlInsert);
