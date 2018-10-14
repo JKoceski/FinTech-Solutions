@@ -1,6 +1,6 @@
 
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', calibri;
     background: cornflowerblue;
 }
 
@@ -21,7 +21,40 @@ h3{
     color: #f6f6f6;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #08038C;
+    margin-bottom: 0 !important;
+    border: 0 !important;
 
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+a:visited {
+	color: yellow;
+}
 
 td{
     width: 150px;
