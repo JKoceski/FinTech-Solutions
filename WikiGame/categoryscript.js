@@ -17,7 +17,7 @@ function loadCategory(categoryIndex) {
 function startGame() {
     var selectedOption = document.querySelector('input[type=radio]:checked');
     if(!selectedOption) {
-        alert('Please select your answer!');
+        alert('Please select your topic!');
         return;
     }
 

@@ -23,8 +23,9 @@
             <h3>In order to play you must <a href="login.php">sign in.</a> If you don't have an account you can register <a href="signup.php">here</a></h3>
         <?php else: ?>
             <h3>You are logged in as <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Logout</a></h3>
+			<h3><a href="gamerules.html"> Play Game</a> </h3>
         <?php endif ?>
-    <h3><a href="gamerules.html"> Play Game</a> </h3>
+    
 </div>
 
 </body>
