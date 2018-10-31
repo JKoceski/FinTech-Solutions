@@ -10,6 +10,7 @@ $username = 'root';
 $dsn = 'mysql:host=localhost; dbname=register';
 $password = '';
 
+$db = '';
 
 
 try{
