@@ -17,22 +17,22 @@ function loadCategory(categoryIndex) {
 function startGame() {
     var selectedOption = document.querySelector('input[type=radio]:checked');
     if(!selectedOption) {
-        alert('Please select your topic!');
+        alert('Please select your answer!');
         return;
     }
 
     var option = selectedOption.value;
     if(option == 1){
-        window.location.href='musicquiz/Quiz.html';
+        window.location.href='musicquiz/Quiz.php';
     }
     else if(option == 2) {
-        window.location.href = 'moviequiz/Quiz.html';
+        window.location.href = 'moviequiz/Quiz.php';
     }
     else if(option == 3) {
-        window.location.href = 'videogamequiz/Quiz.html';
+        window.location.href = 'videogamequiz/Quiz.php';
     }
     else if(option == 4) {
-        window.location.href = 'sportsquiz/Quiz.html';
+        window.location.href = 'sportsquiz/Quiz.php';
     }
 }
 

@@ -83,6 +83,13 @@ if(isset($_POST['signupBtn'])) {
     <link href="format.css" rel="stylesheet">
 </head>
 <body>
+
+	<ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="signup.php">Sign Up</a></li>
+	</ul>
+	
     <div id="signupContainer" class="container" style="height: 400px; top: 55%">
         <h2>Wiki Game</h2>
         <h3>Registration Form</h3>

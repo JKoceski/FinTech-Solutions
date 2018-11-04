@@ -24,6 +24,31 @@ body{
     color: #08038C;
 }
 
+.question{
+    padding: 20px;
+    font-size: 22px;
+    background: #08038C;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+
+.option{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.option:hover{
+    background: #08038C;
+    color: #f6f6f6;
+}
+
 .next-btn{
     border: none;
     outline: none;
@@ -41,6 +66,12 @@ body{
     color: #f6f6f6;
 }
 
+.option input:checked .option{
+    background: #08038C;
+    color: #000;
+}
+
+/*
 .quit-btn{
     border: none;
     outline: none;
@@ -57,3 +88,4 @@ body{
     background: #08038C;
     color: #f6f6f6;
 }
+*/
