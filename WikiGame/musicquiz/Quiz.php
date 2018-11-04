@@ -1,6 +1,5 @@
 <?php 
     include_once '../Resource/Database.php';
-
     include_once '../Resource/session.php';
     
     $_SESSION['type'] = 'music';
@@ -38,6 +37,22 @@ Time : <span id="timer"></span>
 </div>
 <div id="result" class="container result" style="display:none;">
 </div>
+
+<div id="playagain">	
+<input type="button" value="Play Again" class="playagain" id="btnPlay" onClick="window.location.href = '../category.html';" />
+</div>
+
+<div id="home">	
+<input type="button" value="Home" class="home" id="btnHome" onClick="window.location.href = '../index.php';" />
+</div>	
+
+<button id="playagain" class="playagain" onclick=window.location.href="../category.html"; style="display:none;">
+	Play Again</button>
+
+<button id="home" class="home" onclick=window.location.href="../index.php"; style="display:none;">
+	Home</button>
+
+	
 <script type="text/javascript">
     var questions = <?php echo json_encode($rows); ?>;
 </script>
