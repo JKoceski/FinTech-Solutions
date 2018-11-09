@@ -4,7 +4,8 @@
     
     $_SESSION['type'] = 'sports';
 
-    $sql = "SELECT question, option1, option2, option3, option4, answer FROM sports";
+    $sql = "SELECT question, option1, option2, option3, option4, answer 
+    		FROM ".$_SESSION['type'];
     $result = $db->query($sql);
     $result->setFetchMode(PDO::FETCH_ASSOC);
     $rows = array();
@@ -19,7 +20,7 @@
 <head>
 	<title>Quiz</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-	<link href="quiz.css" rel="stylesheet">
+	<link href="../quiz.css" rel="stylesheet">
 </head>
 <body>
 Time : <span id="timer"></span>
@@ -30,9 +31,6 @@ Time : <span id="timer"></span>
 	<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
 	<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
 	<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
-	<form action="../category.html">
-		<input type="submit" class="quit-btn" value="Quit"/>
-	</form>
 	<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
 </div>
 <div id="result" class="container result" style="display:none;">
@@ -43,7 +41,6 @@ Time : <span id="timer"></span>
 	
 <button id="home" class="home" onclick=window.location.href="../index.php"; style="display:none;">
     Home</button>
-
 
 <script type="text/javascript">
     var questions = <?php echo json_encode($rows); ?>;

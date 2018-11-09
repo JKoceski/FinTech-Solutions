@@ -8,9 +8,6 @@
     <link href="format.css" rel="stylesheet">
 </head>
 <body>
-
-
-
 <ul>
     <li><a href="index.php">Home</a></li>
     <li><a href="login.php">Login</a></li>
@@ -23,7 +20,8 @@
             <h3>In order to play you must <a href="login.php">sign in.</a> If you don't have an account you can register <a href="signup.php">here</a></h3>
         <?php else: ?>
             <h3>You are logged in as <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?> <a href="logout.php">Logout</a></h3>
-			<h3><a href="gamerules.html"> Play Game</a> </h3>
+			<h3><a href="gamerules.html">Play Game</a> </h3>
+            <h3><a href="leaderboards.php">Leaderboards</a></h3>
         <?php endif ?>
     
 </div>
