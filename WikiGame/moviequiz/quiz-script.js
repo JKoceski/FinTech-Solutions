@@ -19,12 +19,9 @@ function myTimer() {
     if (sec == -1) {
         container.style.display = 'none';
         resultCont.style.display = '';
-		playagain.style.display = '';
-        home.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
         clearInterval(time);
-        postScore();
-        alert("Time out!! :(");
+        alert("Time out!");
     }
 }
 
@@ -52,32 +49,13 @@ function loadNextQuestion () {
     if(currentQuestion == totQuestions - 1){
         nextButton.textContent = 'Finish';
     }
-    else if(currentQuestion == totQuestions){
+    if(currentQuestion == totQuestions){
         container.style.display = 'none';
         resultCont.style.display = '';
-		playagain.style.display = '';
-        home.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
-        clearInterval(time);
-        postScore()
         return;
     }
     loadQuestion(currentQuestion);
 }
 
-function postScore()
-{
-    $.ajax(
-    {
-        type: "POST",
-        url: "../addScore.php",
-        data:{ score: score },
-        success: function(data)
-        {
-            alert(data);
-        }
-    })
-}
-
-loadQuestion(0);
-
+loadQuestion(currentQuestion);

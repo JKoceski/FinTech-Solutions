@@ -1,7 +1,7 @@
 body {
-	background: #fafafa url(https://jackrugile.com/images/misc/noise-diagonal.png);
+	background: cornflowerblue;
 	color: #444;
-	font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-shadow: 0 1px 0 #fff;
 }
 
@@ -25,7 +25,7 @@ table {
 }	
 
 th {
-	background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	background: #08038C;
 	border-left: 1px solid #555;
 	border-right: 1px solid #777;
 	border-top: 1px solid #555;
