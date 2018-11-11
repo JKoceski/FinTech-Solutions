@@ -10,9 +10,7 @@ var opt3 = document.getElementById('opt3');
 var opt4 = document.getElementById('opt4');
 var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
-var playagain = document.getElementById('playagain');
-var home = document.getElementById('home');
-var sec = 30;
+var sec = 60;
 var time = setInterval(myTimer, 1000);
 
 function myTimer() {
@@ -23,7 +21,7 @@ function myTimer() {
         resultCont.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
         clearInterval(time);
-        alert("Time Out!!!");
+        alert("Time out!");
     }
 }
 
@@ -54,18 +52,10 @@ function loadNextQuestion () {
     if(currentQuestion == totQuestions){
         container.style.display = 'none';
         resultCont.style.display = '';
-        playagain.style.display = '';
-        home.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
         return;
     }
     loadQuestion(currentQuestion);
-}
-
-function quit() {
-    if (confirm("Are you sure you want to quit?")) {
-        window.location.href = "../category.html";
-    }
 }
 
 loadQuestion(currentQuestion);

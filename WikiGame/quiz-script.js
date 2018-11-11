@@ -53,6 +53,8 @@ function loadNextQuestion () {
     else if(currentQuestion == totQuestions){
         container.style.display = 'none';
         resultCont.style.display = '';
+		playagain.style.display = '';
+        home.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
         clearInterval(time);
         postScore()
